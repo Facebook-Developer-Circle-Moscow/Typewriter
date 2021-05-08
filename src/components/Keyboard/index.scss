@@ -1,0 +1,92 @@
+.Keyboard__keys {
+  fill: none;
+  stroke: gray;
+}
+
+.Keyboard__letters {
+  font-size: 14px;
+}
+
+.Keyboard__letter_Q,
+.Keyboard__letter_W,
+.Keyboard__letter_E,
+.Keyboard__letter_R,
+.Keyboard__letter_T,
+.Keyboard__letter_Y,
+.Keyboard__letter_U,
+.Keyboard__letter_I,
+.Keyboard__letter_O,
+.Keyboard__letter_P,
+.Keyboard__letter_A,
+.Keyboard__letter_S,
+.Keyboard__letter_D,
+.Keyboard__letter_F,
+.Keyboard__letter_G,
+.Keyboard__letter_H,
+.Keyboard__letter_J,
+.Keyboard__letter_K,
+.Keyboard__letter_L,
+.Keyboard__letter_Z,
+.Keyboard__letter_X,
+.Keyboard__letter_C,
+.Keyboard__letter_V,
+.Keyboard__letter_B,
+.Keyboard__letter_N,
+.Keyboard__letter_M {
+  font-size: 26px;
+}
+
+.Keyboard__letter_q,
+.Keyboard__letter_w,
+.Keyboard__letter_e,
+.Keyboard__letter_r,
+.Keyboard__letter_t,
+.Keyboard__letter_y,
+.Keyboard__letter_u,
+.Keyboard__letter_i,
+.Keyboard__letter_o,
+.Keyboard__letter_p,
+.Keyboard__letter_a,
+.Keyboard__letter_s,
+.Keyboard__letter_d,
+.Keyboard__letter_f,
+.Keyboard__letter_g,
+.Keyboard__letter_h,
+.Keyboard__letter_j,
+.Keyboard__letter_k,
+.Keyboard__letter_l,
+.Keyboard__letter_z,
+.Keyboard__letter_x,
+.Keyboard__letter_c,
+.Keyboard__letter_v,
+.Keyboard__letter_b,
+.Keyboard__letter_n,
+.Keyboard__letter_m {
+  font-size: 24px;
+}
+
+.Keyboard__letter_tab,
+.Keyboard__letter_caps-lock,
+.Keyboard__letter_shift-left,
+.Keyboard__letter_shift-right,
+.Keyboard__letter_backspace,
+.Keyboard__letter_enter,
+.Keyboard__letter_control,
+.Keyboard__letter_option-left,
+.Keyboard__letter_space,
+.Keyboard__letter_option-right {
+  font-size: 12px;
+}
+
+.Keyboard__letter_hidden {
+  display: none;
+}
+
+.Keyboard__key_active {
+  fill: #79bbff;
+  stroke: black;
+}
+
+.Keyboard__letter_active {
+  fill: #ffffff;
+}

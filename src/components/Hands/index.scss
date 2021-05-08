@@ -1,0 +1,25 @@
+.Hands {
+  position: relative;
+  left: 70px;
+  top: -360px;
+  fill: rgba(0, 0, 0, 0.01);
+  transform: scale(1.55);
+  stroke: rgba(0, 0, 0, 0.3);
+  margin: 0 0 -230px 0;
+}
+
+.Hands__nail {
+  stroke: rgba(0, 0, 0, 0.2);
+}
+
+.Hands__finger_active {
+  stroke: black;
+}
+
+.Hands__position {
+  display: none;
+}
+
+.Hands__position_active {
+  display: block;
+}

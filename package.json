@@ -1,0 +1,104 @@
+{
+  "name": "typewriter",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Typing practice tools",
+  "keywords": [
+    "typing practice"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Sergei Iastrebov",
+    "email": "siastrebov@gmail.com",
+    "url": "https://www.facebook.com/groups/475428499888062"
+  },
+  "homepage": "https://facebook-developer-circle-moscow.github.io/Typewriter/",
+  "bugs": {
+    "url": "https://github.com/Facebook-Developer-Circle-Moscow/Typewriter/issues"
+  },
+  "man": "./README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Facebook-Developer-Circle-Moscow/Typewriter"
+  },
+  "scripts": {
+    "build:development": "webpack --config ./config/webpack.development.config.js",
+    "build:production": "webpack --config ./config/webpack.production.config.js",
+    "build:development:watch": "webpack --config ./config/webpack.development.config.js --watch",
+    "build:production:watch": "webpack --config ./config/webpack.production.config.js --watch",
+    "lint": "yarn run lint:tslint && yarn run lint:eslint",
+    "lint:eslint": "eslint -c .eslintrc.json '{config,public,src}/**/*.{js,jsx}'",
+    "lint:tslint": "tslint -c tslint.json --project tsconfig.json '{config,public,src}/**/*.{ts,tsx}'",
+    "postinstall": "yarn run postinstall:git-lfs && yarn run postinstall:husky",
+    "postinstall:git-lfs": "git lfs update --force",
+    "postinstall:husky": "husky install",
+    "ci": "yarn install --frozen-lockfile"
+  },
+  "dependencies": {
+    "@fontsource/roboto": "^4.3.0",
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/icons": "^4.11.2",
+    "bem-cn": "^3.0.1",
+    "bind-decorator": "^1.0.11",
+    "normalize.css": "^8.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.4",
+    "redux": "^4.1.0",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "@ianwalter/exclude-assets-plugin": "^1.0.0",
+    "@types/bem-cn": "^3.0.0",
+    "@types/react": "^17.0.5",
+    "@types/react-dom": "^17.0.3",
+    "@types/react-redux": "^7.1.16",
+    "@types/redux": "^3.6.0",
+    "@types/redux-devtools-extension": "^2.13.2",
+    "@types/redux-thunk": "^2.1.0",
+    "autoprefixer": "^10.2.5",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "copy-webpack-plugin": "^8.1.1",
+    "csp-html-webpack-plugin": "^5.1.0",
+    "css-loader": "^5.2.4",
+    "eslint": "^7.26.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-react": "^7.23.2",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.1",
+    "husky": "^6.0.0",
+    "image-minimizer-webpack-plugin": "^2.2.0",
+    "imagemin-gifsicle": "^7.0.0",
+    "imagemin-jpegtran": "^7.0.0",
+    "imagemin-optipng": "^8.0.0",
+    "imagemin-svgo": "^9.0.0",
+    "mini-css-extract-plugin": "^1.6.0",
+    "node-sass": "^6.0.0",
+    "postcss": "^8.2.14",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-loader": "^5.2.0",
+    "sass-loader": "^11.0.1",
+    "style-loader": "^2.0.0",
+    "svg-sprite-loader": "^6.0.6",
+    "terser-webpack-plugin": "^5.1.1",
+    "ts-loader": "^9.1.2",
+    "tslint": "^6.1.3",
+    "tslint-loader": "^3.5.4",
+    "tslint-react": "^5.0.0",
+    "typescript": "^4.2.4",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.36.2",
+    "webpack-cli": "^4.7.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn run lint",
+      "pre-push": "yarn run lint && yarn run build:production",
+      "post-commit": "git status",
+      "post-checkout": "yarn run ci",
+      "post-merge": "yarn run ci"
+    }
+  }
+}
