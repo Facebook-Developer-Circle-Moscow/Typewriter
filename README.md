@@ -11,7 +11,7 @@ https://facebook-developer-circle-moscow.github.io/Typewriter/
 TODO
 
 - [x] Create application base and CI
-- [ ] User chooses one of the practice options: typing, spelling, or writing
+- [x] User chooses one of the practice options: typing, spelling, or writing
 - [ ] Typing
     - [x] User can enter own text
     - [ ] User can select random text from database

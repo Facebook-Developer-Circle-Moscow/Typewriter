@@ -1,28 +1,38 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
-import 'normalize.css';
-import '@fontsource/roboto';
+import '@vkontakte/vkui/dist/vkui.css';
 
 import {Provider} from 'react-redux';
+import {HashRouter} from 'react-router-dom';
+
+import {AdaptivityProvider, AppRoot, ConfigProvider} from '@vkontakte/vkui';
 
 import {createStore} from 'store/index';
 
-import {initialState as TextInitialState} from 'reducers/text';
-import {initialState as ViewInitialState} from 'reducers/view';
+import {initialState as TypingInitialState} from 'reducers/typing';
 
-import {Typewriter} from 'components/Typewriter';
+import {Typewriter} from 'containers/Typewriter/Typewriter';
 
 const store = createStore({
-  text: TextInitialState,
-  view: ViewInitialState,
+  typing: TypingInitialState,
 });
+
+import './client.scss';
 
 ReactDOM.render(
     (
-        <Provider store={store}>
-          <Typewriter/>
-        </Provider>
+        <ConfigProvider>
+          <AdaptivityProvider>
+            <Provider store={store}>
+              <HashRouter>
+                <AppRoot>
+                  <Typewriter/>
+                </AppRoot>
+              </HashRouter>
+            </Provider>
+          </AdaptivityProvider>
+        </ConfigProvider>
     ),
     document.getElementById('root'),
 );

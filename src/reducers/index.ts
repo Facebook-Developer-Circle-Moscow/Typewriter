@@ -1,9 +1,7 @@
 import {combineReducers} from 'redux';
 
-import {text} from './text';
-import {view} from './view';
+import {typing} from './typing';
 
 export const reducers = combineReducers({
-  text,
-  view,
+  typing,
 });

@@ -4,7 +4,7 @@ import {block as bem} from 'bem-cn';
 
 const block = bem('Keyboard');
 
-import './index.scss';
+import './Keyboard.scss';
 
 interface Props {
   value: string;

@@ -1,0 +1,17 @@
+.KeyHelper {
+  position: relative;
+  overflow: hidden;
+  transform: scale(0.75);
+}
+
+@media only screen and (max-width: 1280px) {
+  .KeyHelper {
+    transform: scale(0.9);
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .KeyHelper {
+    transform: scale(1);
+  }
+}
