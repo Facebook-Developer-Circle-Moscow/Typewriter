@@ -1,0 +1,75 @@
+.Typewriter {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+.Typewriter__header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 44px;
+  background: #ffffff;
+  box-shadow: 0 1px 1px #e1e3e6;
+  z-index: 2;
+  box-sizing: border-box;
+  padding: 0 16px;
+}
+
+.Typewriter__logo {
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.Typewriter__body {
+  display: flex;
+  flex-direction: row;
+  height: calc(100% - 44px);
+}
+
+.Typewriter__sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 224px;
+  height: 100%;
+  background: #ffffff;
+  box-shadow: 1px 0 1px #e1e3e6;
+  z-index: 1;
+}
+
+.Typewriter__main {
+  width: calc(100% - 224px);
+  height: 100%;
+  background: #EDEEF0;
+  box-sizing: border-box;
+  padding: 16px;
+  overflow: auto;
+}
+
+.Typewriter__panel {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+@media only screen and (max-width: 980px) {
+  .Typewriter__header {
+    padding: 0 16px;
+  }
+
+  .Typewriter__body {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .Typewriter__sidebar {
+    width: 100%;
+    height: 44px;
+    flex-direction: row;
+  }
+
+  .Typewriter__main {
+    width: 100%;
+  }
+}

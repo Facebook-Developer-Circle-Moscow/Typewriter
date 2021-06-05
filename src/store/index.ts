@@ -2,15 +2,13 @@ import thunk from 'redux-thunk';
 
 import * as reduxDevTools from 'redux-devtools-extension/developmentOnly';
 
-import { createStore as createStoreRedux, applyMiddleware } from 'redux';
+import {createStore as createStoreRedux, applyMiddleware} from 'redux';
 
-import { reducers } from 'reducers/index';
-import { TextState } from 'reducers/text';
-import { ViewState } from 'reducers/view';
+import {reducers} from 'reducers/index';
+import {TypingState} from 'reducers/typing';
 
 export type State = {
-  text: TextState;
-  view: ViewState;
+  typing: TypingState;
 };
 
 export const createStore = (initialState: State) => {

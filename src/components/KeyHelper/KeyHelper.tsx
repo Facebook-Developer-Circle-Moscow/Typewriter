@@ -2,12 +2,12 @@ import * as React from 'react';
 
 import {block as bem} from 'bem-cn';
 
-import {Keyboard} from 'components/Keyboard';
-import {Hands} from 'components/Hands';
+import {Keyboard} from 'components/Keyboard/Keyboard';
+import {Hands} from 'components/Hands/Hands';
 
 const block = bem('KeyHelper');
 
-import './index.scss';
+import './KeyHelper.scss';
 
 interface Props {
   value: string;

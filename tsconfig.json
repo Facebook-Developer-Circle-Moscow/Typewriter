@@ -15,6 +15,9 @@
     ],
     "baseUrl": "./",
     "paths": {
+      "containers/*": [
+        "src/containers/*"
+      ],
       "components/*": [
         "src/components/*"
       ],
@@ -26,6 +29,9 @@
       ],
       "actions/*": [
         "src/actions/*"
+      ],
+      "models/*": [
+        "src/models/*"
       ]
     }
   },

@@ -1,11 +1,10 @@
 .Hands {
-  position: relative;
-  left: 70px;
-  top: -360px;
+  position: absolute;
+  left: 0;
+  top: 0;
   fill: rgba(0, 0, 0, 0.01);
-  transform: scale(1.55);
+  transform: scale(1.55) translate(5%, -2%);
   stroke: rgba(0, 0, 0, 0.3);
-  margin: 0 0 -230px 0;
 }
 
 .Hands__nail {
