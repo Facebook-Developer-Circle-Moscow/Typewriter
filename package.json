@@ -82,7 +82,7 @@
     "imagemin-optipng": "^8.0.0",
     "imagemin-svgo": "^9.0.0",
     "mini-css-extract-plugin": "^1.6.0",
-    "node-sass": "^6.0.0",
+    "node-sass": "^7.0.0",
     "postcss": "^8.2.14",
     "postcss-csso": "^5.0.1",
     "postcss-custom-properties": "^11.0.0",
